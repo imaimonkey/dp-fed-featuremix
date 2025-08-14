@@ -14,11 +14,11 @@ use_dp = [False, True]
 
 base_args = {
     "batch_size": 128,
-    "lr": 1e-3,
-    "epochs": 20,
-    "mixup_alpha": 1.0,
+    "lr": 5e-4,
+    "epochs": 30,
+    "mixup_alpha": 0.4,
     "dp_clip": 1.0,
-    "dp_noise_multiplier": 1.0,
+    "dp_noise_multiplier": 0.3,
 }
 
 combinations = list(itertools.product(models, use_mixup, use_dp))
